@@ -3,12 +3,12 @@ import React from 'react';
 import './App.css';
 // import  Login from './components/auth/Login'
 // import Nnamdi from './components/Nnamdi'
-import Clock from './components/Clock'
+// import Clock from './components/Clock'
 // import Signup from './components/auth/Signup'
 // import Button from 'react-bootstrap/Button';
 // import Alert from 'react-bootstrap/Alert';
 // import Form from "react-bootstrap/Form"
-// import CustomRouter from './components/Router'
+import CustomRouter from './components/Router'
 // import Button from 'react-bootstrap/Button'
 
 
@@ -70,54 +70,37 @@ import Clock from './components/Clock'
 //  export default App;
 
 
- class App extends React.Component {
+//  class App extends React.Component {
 
-  constructor(props){
-    super(props)
-   this.state = {
-      date: new Date()
-    }
-  } 
+//   constructor(props){
+//     super(props)
+//    this.state = {
+//       date: new Date()
+//     }
+//   } 
   
-    // render(){ 
-    //  return (
-    // <div className=''>
+  
+   function App() {
+    
+    return (
+     <div className=''>
+    <CustomRouter></CustomRouter> 
        
-    //      <Clock></Clock>
    
-    //    <div>
-    // )
-    // }
-    // }
-
-    // export default App;
-
-/* 
-  //         /* <Signup></Signup> */
-  /* //         <CustomRouter></CustomRouter> */
-  // {/* //       </div> */} */}
-        
-  /* //     </div>
-  //   )
-   } 
-   */
-
-
-
-    render(){   
-     return (
-      <div className='App-header'>
-       <div>
-        <Clock></Clock>
-     {/* </div>
-         <div>
-        <Login></Login> */}
       </div>
-        
-    </div>
-     ) 
-  }
- }
+     )
+     }
+     
+
+     
+     export default App; 
+
   
-  export default App; 
+    
+
+
+         
+    
+   
+  
   
